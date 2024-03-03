@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol LandingViewControllerDelegate {
+protocol LandingViewControllerDelegate: AnyObject {
     func didGetWeather(data: WeatherResponseModel)
     func didFailToGetWeather(withError error: Error)
 }
@@ -18,7 +18,7 @@ protocol CurrentWeatherViewModelDelegate {
 
 class CurrentWeatherViewModel {
     var apiServices: APIService
-    var viewDelegate: LandingViewControllerDelegate?
+    weak var viewDelegate: LandingViewControllerDelegate?
     var weatherResponse: WeatherResponseModel?
     
     init(apiServices: APIService) {
