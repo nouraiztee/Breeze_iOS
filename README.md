@@ -17,7 +17,7 @@ Design -
 
   A very simple design is followed in Breeze.
   Top section show current weather condition through an image and current tempurate underneath the image.
-  Bottom section shows forecats temp fpr next 3 days (Day, weather condition, temp)
+  Bottom section shows forecats temp for next 3 days (Day, weather condition, temp(minimum for the day))
 
 Functionality - 
 
